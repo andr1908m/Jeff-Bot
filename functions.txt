@@ -1,0 +1,60 @@
+These are objects:
+
+
+Claw:
+
+
+ClawSetOpen()
+
+ClawSetClose()
+
+ClawSetDegrees(int degrees)
+
+
+RobotDrive:
+
+//speed goes from 0-255
+
+int speedLeft
+int speedRight
+
+//setters
+
+setLeftMotorSpeed(int speedLeft, double time)
+
+setRightMotorSpeed(int speedRight, double time)
+
+setSpeed(int speed, double time) // sets both at same speed
+
+
+//these you could technically make your own commands for:
+
+moveForwardFullSpeed(double time)
+
+moveBackwardFullSpeed(double time)
+
+moveBackward(double time) //at speed you set, by default 0
+
+moveForward(double time) //at speed you set, by default 0
+
+turnLeft(double speed, double time) // turnLeft at a certain speed
+
+turnRight(double speed, double time) // turnRight at a certain speed
+
+turn(double degrees) // turnLeft a certain amount of degrees
+
+ColorSensor:
+
+ColorOpen() // turns On the sensor
+
+ColorClose() // turns Off the sensor
+
+ColorGrab() // grabs the current color it sees
+
+Infrared:
+
+InfraOn() // turns On the sensor
+
+InfraOff() // turns Off the sensor
+
+Wifi coming soon!
